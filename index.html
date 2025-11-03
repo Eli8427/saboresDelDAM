@@ -155,5 +155,10 @@
             <button id="cerrar" type="button">Cerrar</button>
             </dialog>
         </main>
+        <script>
+            const dialog = document.getElementById('reserva');
+            document.getElementById('abrir').onclick = () => dialog.showModal();
+            document.getElementById('cerrar').onclick = () => dialog.close();
+        </script>
     </body>
 </html>
